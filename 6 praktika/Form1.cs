@@ -24,14 +24,11 @@ namespace _6_praktika
       string str = (string)listBox1.Items[index];
       string subString = "сок";
       int indexOfSubstring = str.IndexOf(subString);
-      int count=0;
-      int i=0;
-      if (subString == "сок")
-        count++;
+      if (indexOfSubstring == 0)
+        label1.Text = "сок = да ";
       else
-          i++;
-      
-      label1.Text = "сок = " + count + i;
+        label1.Text = "сок = нет ";
+    
 
 
 
